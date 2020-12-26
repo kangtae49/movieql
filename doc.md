@@ -58,3 +58,32 @@ yarn add babel-cli babel-preset-env babel-preset-stage-3 --dev
 ```
 
 http://localhost:4000
+
+https://yts.am/api/v2/list_movies.json?limit=50&minimum_rating=9
+
+JsonView chrome extension
+
+```
+yarn add node-fetch
+```
+
+```
+query {
+  movies(limit:10, rating:8.5){
+    title
+    rating
+  }
+}
+```
+```
+mutation {
+  addMovie(name: "RockandRolla", score: 9){
+    name
+  }
+}
+```
+```
+mutation{
+  deleteMovie(id: 1)
+}
+```
