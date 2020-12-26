@@ -5,5 +5,12 @@
   "main": "index.js",
   "repository": "https://github.com/kangtae49/movieql",
   "author": "KangTae Kim<kangtae49@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  },
+  "scripts": {
+    "start": "nodemon"
+}
+
 }

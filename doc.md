@@ -21,3 +21,31 @@ git pull origin master
 git push
 code .
 ```
+
+```
+yarn add graphql-yoga
+npm install -g nodemon
+yarn global add babel-cli
+```
+
+nodemon
+---
+``` js
+// index.js
+console.log('hello')
+```
+
+``` json
+# package.json
+{
+    ...
+    "scripts": {
+        "start": "nodemon"
+    }
+    ...
+}
+
+```
+```
+yarn start
+```
