@@ -40,7 +40,7 @@ console.log('hello')
 {
     ...
     "scripts": {
-        "start": "nodemon"
+        "start": "nodemon --exec babel-node index.js"
     }
     ...
 }
@@ -49,3 +49,12 @@ console.log('hello')
 ```
 yarn start
 ```
+
+```
+yarn add babel-node --dev
+yarn global add babel-cli
+yarn global add babel-cli --ignore-engines
+yarn add babel-cli babel-preset-env babel-preset-stage-3 --dev
+```
+
+http://localhost:4000
