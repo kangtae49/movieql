@@ -1,27 +1,9 @@
-const people = [
-    {
-        id: "0",
-        name: "Nicolas",
-        age: 18,
-        gender: "female"
-    },
-    {
-        id: "1",
-        name: "홍길동",
-        age: 18,
-        gender: "female"
-    },
-    {
-        id: "2",
-        name: "이순신",
-        age: 18,
-        gender: "female"
-    },
-];
+import {getMovies, getById} from "./db"
 
 const resolvers = {
     Query: {
-        people: () => people
+        movies: () => getMovies(),
+        movie: (_, {id}) => getById(id)
     }
 };
 
