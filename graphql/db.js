@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 const API_URL = 'https://yts.am/api/v2/list_movies.json?'
 // '?limit=50&minimum_rating=9'
 
-export const getMovies = (limit, rating) => {
+export const getMovies = (limit=10, rating=8.5) => {
     let REQUEST_URL = API_URL;
     if(limit > 0) {
         REQUEST_URL += `limit=${limit}`;
